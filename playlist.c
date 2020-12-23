@@ -9,10 +9,10 @@
 #define MIN(_A, _B) (((_A) < (_B)) ? (_A) : (_B))
 
 /* asumsikan semua arsitektur adalah menggunakan little-endian byte addressing */
-#define FOURCC(_A, _B, _C, _D) \
-    ((_A) & 0xFF) | \
-    (((_B) & 0xFF) << 8) | \
-    (((_C) & 0xFF) << 16) | \
+#define FOURCC(_A, _B, _C, _D)      \
+    ((_A) & 0xFF) |                 \
+    (((_B) & 0xFF) << 8) |          \
+    (((_C) & 0xFF) << 16) |         \
     (((_D) & 0xFF) << 24)
 
 #define CMPLAYER_MAGIC  FOURCC('C', 'M', 'P', 'L')
